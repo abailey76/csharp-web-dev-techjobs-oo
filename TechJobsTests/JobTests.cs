@@ -23,12 +23,12 @@ namespace TechJobsTests
         [TestMethod]
         public void TestJobConstructorSetsAllFields()
         {
-            Job test_job3 = new Job("Product Tester", new Employer("Spacely Sprockets"), new Location("Jupiter"), new PositionType("Quality Assurance"), new CoreCompetency("Tenacity"));
+            Job test_job3 = new Job("Product Tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
             Assert.AreEqual("Product Tester", test_job3.Name);
-            Assert.AreEqual("Spacely Sprockets", test_job3.EmployerName.Value);
-            Assert.AreEqual("Jupiter", test_job3.EmployerLocation.Value);
-            Assert.AreEqual("Quality Assurance", test_job3.JobType.Value);
-            Assert.AreEqual("Tenacity", test_job3.JobCoreCompetency.Value);
+            Assert.AreEqual("ACME", test_job3.EmployerName.Value);
+            Assert.AreEqual("Desert", test_job3.EmployerLocation.Value);
+            Assert.AreEqual("Quality control", test_job3.JobType.Value);
+            Assert.AreEqual("Persistence", test_job3.JobCoreCompetency.Value);
         }
 
         [TestMethod]
