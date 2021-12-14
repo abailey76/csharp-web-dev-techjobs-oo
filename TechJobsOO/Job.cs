@@ -47,25 +47,25 @@ namespace TechJobsOO
         {
             if (Name == null && EmployerName == null && EmployerLocation == null && JobType == null && JobCoreCompetency == null)
             {
-                return "";
+                return "OOPS! This job does not seem to exist.";
             }
-            else if (Name == null || Name == "")
+            if (Name == null || Name == "")
             {
                 Name = "Data not available";
             }
-            else if (EmployerName.Value == null || EmployerName.Value == "")
+            if (EmployerName.Value == null || EmployerName.Value == "")
             {
                 EmployerName.Value = "Data not available";
             }
-            else if (EmployerLocation.Value == null || EmployerLocation.Value == "")
+            if (EmployerLocation.Value == null || EmployerLocation.Value == "")
             {
                 EmployerLocation.Value = "Data not available";
             }
-            else if (JobType.Value == null || JobType.Value == "")
+            if (JobType.Value == null || JobType.Value == "")
             {
                 JobType.Value = "Data not available";
             }
-            else if (JobCoreCompetency.Value == null || JobCoreCompetency.Value == "")
+            if (JobCoreCompetency.Value == null || JobCoreCompetency.Value == "")
             {
 
                 JobCoreCompetency.Value = "Data not available";
