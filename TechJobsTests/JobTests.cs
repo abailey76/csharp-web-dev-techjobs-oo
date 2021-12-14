@@ -47,16 +47,17 @@ namespace TechJobsTests
         {
             Job test_job6 = new Job("Domestic Attendant", new Employer("Jetson Family"), new Location("Outer Space"), new PositionType("Facility Maintenance"), new CoreCompetency("Robot"));
             {
-                {
-                    string outputExpected = 
-                    $"\nID: {test_job6.Id}\n" +
-                    $"Name: {test_job6.Name}\n" +
-                    $"Employer: {test_job6.EmployerName.Value}\n" +
-                    $"Location: {test_job6.EmployerLocation.Value}\n" +
-                    $"Position Type: {test_job6.JobType.Value}\n" +
-                    $"Core Competency: {test_job6.JobCoreCompetency.Value}\n";
-                    Assert.AreEqual(outputExpected, test_job6.ToString());
-                }
+                
+                string outputExpected = 
+                $"\nID: {test_job6.Id}\n" +
+                $"Name: {test_job6.Name}\n" +
+                $"Employer: {test_job6.EmployerName.Value}\n" +
+                $"Location: {test_job6.EmployerLocation.Value}\n" +
+                $"Position Type: {test_job6.JobType.Value}\n" +
+                $"Core Competency: {test_job6.JobCoreCompetency.Value}\n";
+                Assert.AreEqual(outputExpected, test_job6.ToString());
+                Assert.IsTrue(outputExpected.StartsWith("\n"));
+                Assert.IsTrue(outputExpected.EndsWith("\n"));
             }
         }
     }

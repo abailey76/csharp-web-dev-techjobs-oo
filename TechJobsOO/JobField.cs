@@ -33,7 +33,7 @@ namespace TechJobsOO
 
         public override string ToString()
         {
-            return base.ToString();
+            return Value;
         }
     }
 }
