@@ -11,7 +11,7 @@
 
         }
 
-        public CoreCompetency(string v) : base(v)
+        public CoreCompetency(string value) : base(value)
         {
 
         }
